@@ -101,7 +101,7 @@ nav ul li{
 nav ul li:hover a{
     outline: 2px solid black;
     transition: 0.2s ease-in-out;
-    background-color: white;
+    background-color:red;
 
 }
 
