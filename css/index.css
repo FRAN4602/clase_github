@@ -1,0 +1,114 @@
+.text-10px {
+  font-size: 10px; }
+
+.text-16px {
+  font-size: 16px; }
+
+.text-20px {
+  font-size: 20px; }
+
+.mp-1 {
+  margin: 20px;
+  padding: 0 20px; }
+
+.mp-2 {
+  margin: 20px;
+  padding: 0 20px; }
+
+.mp-3 {
+  margin: 20px;
+  padding: 0 20px; }
+
+.mp-4 {
+  margin: 20px;
+  padding: 0 20px; }
+
+.mp-5 {
+  margin: 20px;
+  padding: 0 20px; }
+
+.mp-6 {
+  margin: 20px;
+  padding: 0 20px; }
+
+.mp-7 {
+  margin: 20px;
+  padding: 0 20px; }
+
+.mp-8 {
+  margin: 20px;
+  padding: 0 20px; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.cabecera {
+  position: sticky;
+  background-color: red;
+  display: flex;
+  height: 50%;
+  padding: 2%;
+  top: 0;
+  z-index: 1; }
+  .cabecera .navbar-nav {
+    gap: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+  .cabecera__logo {
+    width: 50%; }
+    .cabecera__logo__img {
+      max-height: 140px;
+      padding-top: 10px; }
+  .cabecera nav {
+    width: 100vw;
+    margin: auto;
+    background-color: red; }
+    .cabecera nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 7,5rem;
+      font-size: 1.2rem; }
+      .cabecera nav ul li {
+        list-style-type: none;
+        position: relative;
+        text-align: center;
+        transition: 0,2s ease-in-out; }
+        .cabecera nav ul li a {
+          font-weight: bolder; }
+      .cabecera nav ul li:hover a {
+        outline: 2px solid black;
+        transition: 0.2s ease-in-out;
+        background-color: white; }
+
+.procesos {
+  display: flex;
+  flex-direction: column;
+  max-width: 1080px;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif; }
+  .procesos__titulo {
+    color: red;
+    padding-top: 5%; }
+  .procesos__div {
+    margin-top: 10vh;
+    margin-bottom: 5vh; }
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  max-width: 1080px;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 10vh; }
+  .about-us__div {
+    margin-top: 10vh; }
+    .about-us__div--imagen {
+      margin-bottom: 10%; }
+
+footer {
+  height: 20vh;
+  background: linear-gradient(to bottom, red, lightgray, white); }

@@ -1,0 +1,113 @@
+$ancho:720px;
+$sizes: 10px 16px 20px;
+
+
+
+@each $size in $sizes{
+    .text-#{$size}{
+        font-size:$size;
+    }
+}
+
+@for $i from 1 through 8{
+    .mp-#{$i}{
+       margin: 20px;
+       padding: 0 20px;
+    }
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+.cabecera{
+    position: sticky;
+    background-color: red;
+    display: flex;
+    height: 50%;
+    padding: 2%;
+    top: 0;
+    z-index: 1; 
+
+    .navbar-nav{
+        gap: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+    }
+    &__logo{
+        width: 50%;
+        &__img{
+            max-height: 140px;
+            padding-top: 10px;
+        }
+    }
+    nav{
+        width: 100vw;
+        margin: auto;
+        background-color: red;
+      ul{
+          list-style-type:none ;
+          display: flex;
+          justify-content: space-between;
+          gap: 7,5rem;
+          font-size: 1.2rem;
+          li{
+            list-style-type: none;
+            position: relative;
+            text-align: center;
+            transition: 0,2s ease-in-out;
+            a{
+                font-weight: bolder;
+            }
+          }
+          li:hover a{
+            outline: 2px solid black;
+            transition: 0.2s ease-in-out;
+            background-color: white;
+            
+          }
+      }
+    }
+}
+
+.procesos{
+    display: flex;
+    flex-direction: column;
+    max-width: $ancho*1.5;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif; 
+
+    &__titulo{
+        color: red;
+        padding-top: 5%;
+    }
+    &__div{
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        
+    }
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    max-width: $ancho*1.5;
+    margin:0 auto;
+    align-items: center;
+    margin-top: 10vh;
+    &__div{
+         margin-top: 10vh;
+        &--imagen{
+            margin-bottom: 10%;
+        }
+        
+    }
+}
+footer{
+    height: 20vh;
+    background: linear-gradient(to bottom, red, lightgray, white );
+}

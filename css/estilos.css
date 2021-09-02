@@ -1,0 +1,389 @@
+   /* globales */
+
+.color-blanco{
+    color: rgb(255, 255, 255);
+}
+.fondo-celeste{
+    background-color: lightskyblue;
+}
+
+p{
+    color:black;
+}
+
+.fondo-blanco{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.white-p{
+    color: white;
+}
+
+
+  
+
+/* primera seccion */
+
+
+.estilo ul li{
+    list-style-type: none;
+}
+.estilo h2{
+    text-decoration: solid;
+}
+   /* header */
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 7,5rem;
+    font-size: 1.2rem;
+}
+
+nav ul a{
+
+    font-weight: bolder;
+}
+
+.logo-header{
+    width: 50%;
+}
+
+nav{
+    width: 100vw;
+    margin: auto;
+    background-color: red;
+    
+}
+.navbar-nav{
+    gap: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+   
+}
+
+header{
+    position: sticky;
+    background-color: red;
+    display: flex;
+    height: 50%;
+    padding: 2%;
+    top: 0;
+   /* overflow: auto;*/
+   z-index: 1;
+   
+    
+}
+
+.logo{
+    max-height: 140px;
+    padding-top: 10px;
+    
+    
+
+}
+nav ul li{
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    transition: 0,2s ease-in-out;
+
+}
+nav ul li:hover a{
+    outline: 2px solid black;
+    transition: 0.2s ease-in-out;
+    background-color: white;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    
+}
+
+
+   /* submenu*/
+
+nav ul ul{
+    position: absolute;
+    padding: 5%;
+    display: none;
+    /* margin: 0 auto; */
+
+}
+
+
+
+nav ul ul li{
+    display: block;
+    padding: 5%;
+    position: relative;
+    min-width: 100%;
+    /* margin:0 10% ; */
+}  
+
+nav ul li:hover ul{
+    display: block;
+}
+
+   /*archivo nuestros productos*/
+
+tbody tr ul li{
+    list-style-position: outside;
+}
+#table{
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#form{
+    margin: 10vh auto;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+}
+label{
+    margin: 2vh;
+}
+   /*seccion 3 nosotros*/
+
+#productos-destacados img{
+    margin: 10px 20px 10px 20px;
+}
+
+#nosotros div{
+    padding: 10px 10px 10px 10px;
+    margin: 50px 50px;
+    border-style: solid;
+    border-width: 5px;    
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    box-sizing: border-box;
+}
+#productos-destacados div{
+    display: inline-block;
+    text-align: center;
+    margin: 50px 10px;
+    border-style: solid;
+
+    
+}
+#productos-destacados{
+    margin: 10px 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.list{
+    padding: 10px 0;
+}
+
+#nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: linear-gradient(to top, red, lightgray, white );*/
+    margin:0 auto;
+    box-sizing: border-box;
+    max-width: 1200px;
+    height: 80%; 
+   
+}
+
+/*main section{
+    width: 50%;
+    padding: 10px;
+
+}
+main .estilo{
+    width: 50%;
+    padding: 10px;
+    
+}*/
+    /*grid*/
+    
+#productos-destacados{
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+
+    "camiseta residuo"
+
+    "arranque escombro";
+    grid-template-rows:  0,5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center ;
+    
+    
+}
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content:center;
+    margin: 0 auto ;
+}
+  /*transformaciones*/
+.arranque{
+    grid-area: arranque;
+    background-color:red;
+}
+.arranque:hover{
+    transform: rotate(10deg);
+}
+
+.camiseta{
+    grid-area: camiseta;
+    background-color:red;
+}
+.camiseta:hover{
+    transform: rotate(10deg);
+}
+
+
+.escombro{
+    grid-area: escombro;
+    background-color: red;
+}
+.escombro:hover{
+    transform: rotate(10deg);
+}
+
+
+.residuo{
+    grid-area: residuo;
+    background-color:red;
+    
+}
+.residuo:hover{
+    transform:rotate(10deg) ;
+}
+#procesos{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+#procesos div{
+    margin-top: 10vh;
+}
+#about-us{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin:0 auto;
+    align-items: center;
+    margin-top: 10vh;
+}
+#about-us div{
+    margin-top: 10vh;
+}
+
+footer{
+    height: 20vh;
+    background: linear-gradient(to bottom, red, lightgray, white );
+}
+
+   /*nosotros.html*/
+
+.imagen-fabrica{
+    margin-bottom: 10%;
+}
+
+    /*responsive*/
+
+@media only screen and (max-width: 768px){
+   main{
+       background-color: snow;
+       flex-direction: column;
+   }
+   #productos-destacados{
+    display: flex;
+    flex-direction: column;
+   }
+   #nosotros div{
+    height: auto;
+    width: auto;
+   }
+   .imagen{
+    height: 70%;
+   }
+   nav ul{
+    margin:auto;
+    flex-wrap: wrap;
+    }
+    nav ul ul li{
+        display: none;
+    }
+    
+
+    
+}
+
+
+@media only screen and (max-width: 1024px) {
+   
+    
+    
+    
+    nav ul ul li{
+        display: none;
+    }
+    
+  
+}
+
+   
+
+@media only screen and (max-width:320px) {
+    main{
+        background-color: snow;
+        flex-direction: column;
+        
+    }
+    .estilo{
+        height: 100%;
+    }
+    .imagen{
+        height: 50%;
+    }
+    #productos-destacados{
+        display: flex;
+        flex-direction: column;
+    }
+    #nosotros div{
+        height: auto;
+        width: auto;
+    }
+    nav ul{
+        margin:auto;
+        flex-wrap: wrap;
+
+    }
+
+}
