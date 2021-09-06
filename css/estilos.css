@@ -206,7 +206,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background: linear-gradient(to top, red, lightgray, white );*/
     margin:0 auto;
     box-sizing: border-box;
     max-width: 1200px;
