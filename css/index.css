@@ -112,3 +112,79 @@ body {
 footer {
   height: 20vh;
   background: linear-gradient(to bottom, red, lightgray, white); }
+
+
+
+
+      /*responsive*/
+
+@media only screen and (max-width: 768px){
+  main{
+      background-color: snow;
+      flex-direction: column;
+  }
+  #productos-destacados{
+   display: flex;
+   flex-direction: column;
+  }
+  #nosotros div{
+   height: auto;
+   width: auto;
+  }
+  .imagen{
+   height: 70%;
+  }
+  nav ul{
+   margin:auto;
+   flex-wrap: wrap;
+   }
+   nav ul ul li{
+       display: none;
+   }
+   
+
+   
+}
+
+
+@media only screen and (max-width: 1024px) {
+  
+   
+   
+   
+   nav ul ul li{
+       display: none;
+   }
+   
+ 
+}
+
+  
+
+@media only screen and (max-width:320px) {
+   main{
+       background-color: snow;
+       flex-direction: column;
+       
+   }
+   .estilo{
+       height: 100%;
+   }
+   .imagen{
+       height: 50%;
+   }
+   #productos-destacados{
+       display: flex;
+       flex-direction: column;
+   }
+   #nosotros div{
+       height: auto;
+       width: auto;
+   }
+   nav ul{
+       margin:auto;
+       flex-wrap: wrap;
+
+   }
+
+}
