@@ -39,9 +39,14 @@
   margin: 20px;
   padding: 0 20px; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 body {
   font-family: Arial, Helvetica, sans-serif; }
 
+/*header*/
 .cabecera {
   position: sticky;
   background-color: red;
@@ -80,8 +85,84 @@ body {
       .cabecera nav ul li:hover a {
         outline: 2px solid black;
         transition: 0.2s ease-in-out;
-        background-color: white; }
+        background-color: red; }
+      .cabecera nav ul li:hover ul {
+        display: block; }
+      .cabecera nav ul ul {
+        position: absolute;
+        padding: 5%;
+        display: none; }
+        .cabecera nav ul ul li {
+          display: block;
+          padding: 5%;
+          position: relative;
+          min-width: 100%; }
 
+/*index*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1200px;
+  height: 80%; }
+
+#productos-destacados {
+  display: grid;
+  grid-template-areas: "titulo titulo"  "camiseta residuo"  "arranque escombro";
+  grid-template-rows: 0,5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center; }
+  #productos-destacados .titulo {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; }
+  #productos-destacados div {
+    display: inline-block;
+    text-align: center;
+    margin: 50px 10px;
+    border-style: solid; }
+  #productos-destacados img {
+    margin: 10px 20px 10px 20px; }
+  #productos-destacados .arranque {
+    grid-area: arranque;
+    background-color: red; }
+  #productos-destacados .arranque:hover {
+    transform: rotate(10deg); }
+  #productos-destacados .camiseta {
+    grid-area: camiseta;
+    background-color: red; }
+  #productos-destacados .camiseta:hover {
+    transform: rotate(10deg); }
+  #productos-destacados .escombro {
+    grid-area: escombro;
+    background-color: red; }
+  #productos-destacados .escombro:hover {
+    transform: rotate(10deg); }
+  #productos-destacados .residuo {
+    grid-area: residuo;
+    background-color: red; }
+  #productos-destacados .residuo:hover {
+    transform: rotate(10deg); }
+
+#nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #nosotros div {
+    padding: 10px 10px 10px 10px;
+    margin: 50px 50px;
+    border-style: solid;
+    border-width: 5px;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    box-sizing: border-box; }
+
+/*procesos.html*/
 .procesos {
   display: flex;
   flex-direction: column;
