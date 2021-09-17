@@ -1,3 +1,25 @@
+@media only screen and (max-width: 1024px) {
+  nav ul ul li {
+    display: none; } }
+
+@media only screen and (max-width: 320px) {
+  main {
+    background-color: snow;
+    flex-direction: column; }
+  .estilo {
+    height: 100%; }
+  .imagen {
+    height: 50%; }
+  #productos-destacados {
+    display: flex;
+    flex-direction: column; }
+  #nosotros div {
+    height: auto;
+    width: auto; }
+  nav ul {
+    margin: auto;
+    flex-wrap: wrap; } }
+
 .text-10px {
   font-size: 10px; }
 
