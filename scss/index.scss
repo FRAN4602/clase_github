@@ -32,7 +32,7 @@ $sizes: 10px 16px 20px;
         flex-direction: column;
     }
     #nosotros div{
-        height: auto;
+        height: auto;  
         width: auto;
     }
     nav ul{
@@ -129,7 +129,9 @@ body{
                 position: relative;
                 min-width: 100%;
                 background-color: red;
-                
+                @media only screen and (max-width: 1024px){
+                    display: none;
+                }
               }
             
           }
@@ -146,6 +148,7 @@ main{
     box-sizing: border-box;
     max-width: 1200px;
     height: 80%; 
+
 }
 
 #productos-destacados{
@@ -159,6 +162,16 @@ main{
     grid-template-rows:  0,5fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     justify-items: center ;
+
+    @media only screen and (max-width: 320px) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        
+    }
 
     .titulo{
         grid-area: titulo;
