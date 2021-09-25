@@ -102,27 +102,38 @@ body {
         position: relative;
         text-align: center;
         transition: 0,2s ease-in-out; }
-        .cabecera nav ul li a {
-          font-weight: bolder; }
-      .cabecera nav ul li:hover a {
-        outline: 2px solid black;
-        transition: 0.2s ease-in-out;
-        background-color: white; }
-      .cabecera nav ul li:hover ul {
-        display: block; }
-      .cabecera nav ul ul {
-        position: absolute;
-        padding: 5%;
-        display: none; }
-        .cabecera nav ul ul li {
+      .cabecera nav ul a {
+        font-weight: bolder; }
+    .cabecera nav li:hover a {
+      outline: 2px solid black;
+      transition: 0.2s ease-in-out;
+      background-color: white; }
+    .cabecera nav li:hover ul {
+      display: block; }
+    .cabecera nav ul {
+      position: absolute;
+      padding: 10%;
+      display: none;
+      background-color: red;
+      outline: 3px solid black; }
+      .cabecera nav ul li {
+        padding: 3%;
+        width: 100%;
+        background-color: red; }
+        .cabecera nav ul li .href {
           display: block;
-          padding: 5%;
+          margin: 2% auto;
+          padding-bottom: 10%;
           position: relative;
-          min-width: 100%;
-          background-color: red; }
-          @media only screen and (max-width: 1024px) {
-            .cabecera nav ul ul li {
-              display: none; } }
+          width: 100%;
+          width: max-content;
+          background-color: red;
+          outline: none;
+          border-bottom: 2px solid black;
+          color: white !important; }
+        @media only screen and (max-width: 1024px) {
+          .cabecera nav ul li {
+            display: none; } }
 
 /*index*/
 main {
