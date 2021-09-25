@@ -178,13 +178,15 @@ main {
 /*nuestros-productos*/
 #table {
   margin: 0 auto;
-  margin-top: 10%;
+  padding: 5%;
   max-width: 1024px;
   display: flex;
   flex-direction: column;
   align-items: center; }
   #table tbody tr ul li {
     list-style-position: outside; }
+  #table .foto-bolsa {
+    margin: 5%; }
 
 /*procesos.html*/
 .procesos {
@@ -214,6 +216,24 @@ main {
     margin-top: 10vh; }
     .about-us__div--imagen {
       margin-bottom: 10%; }
+
+/*contacto*/
+#form {
+  margin: 10vh auto;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid red; }
+  #form .input {
+    margin-bottom: 3%; }
+  #form .contact-title {
+    margin-top: 3%;
+    border-bottom: 5px double black; }
+
+.label {
+  margin: 2vh 0;
+  border-bottom: 2px solid black; }
 
 footer {
   height: 20vh;
