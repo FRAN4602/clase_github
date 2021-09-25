@@ -203,6 +203,19 @@ main{
     }
 
 }
+/*nuestros-productos*/
+#table{
+    margin: 0 auto;
+    margin-top: 10%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    tbody tr ul li{
+        list-style-position: outside;
+    }
+}
+
 
 /*procesos.html*/
 .procesos{
@@ -224,7 +237,7 @@ main{
         
     }
 }
-
+   /*nosotros*/
 .about-us{
     display: flex;
     flex-direction: column;

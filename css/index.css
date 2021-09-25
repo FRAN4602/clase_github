@@ -175,6 +175,17 @@ main {
     text-align: center;
     box-sizing: border-box; }
 
+/*nuestros-productos*/
+#table {
+  margin: 0 auto;
+  margin-top: 10%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #table tbody tr ul li {
+    list-style-position: outside; }
+
 /*procesos.html*/
 .procesos {
   display: flex;
@@ -191,6 +202,7 @@ main {
     margin-top: 10vh;
     margin-bottom: 5vh; }
 
+/*nosotros*/
 .about-us {
   display: flex;
   flex-direction: column;
