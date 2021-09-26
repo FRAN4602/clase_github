@@ -86,7 +86,9 @@ body{
                 outline: 3px solid black;
                 @media only screen and (max-width:768px) {
                     display: none;
-                    
+                    margin: auto;
+                    flex-wrap: wrap;
+                    outline: none;
                 }
 
                 li{
@@ -98,7 +100,7 @@ body{
                      display: none;
                  }
                  @media only screen and (max-width: 320px){
-                     display: none;
+                     display: none !important;
                      
                  }
                     .href{
@@ -235,6 +237,11 @@ main{
         @media only screen and (max-width: 768px){
             height: auto;
             width: auto;
+        }
+        @media only screen and (max-width:320px) {
+            height: auto;
+            width: auto;
+            
         }
     }
 
