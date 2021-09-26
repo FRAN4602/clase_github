@@ -347,6 +347,10 @@ footer{
         grid-template-rows: 1fr 1fr 0.5fr;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+        @media only screen and (max-width: 320px) {
+            width: 100%;
+            
+        }
     }
     .instagram{
         display: flex;
