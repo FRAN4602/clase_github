@@ -287,3 +287,42 @@ main {
 footer {
   height: 20vh;
   background: linear-gradient(to bottom, red, lightgray, white); }
+  footer section {
+    width: 50vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "instagram whatsapp" "facebook mail" "copyr copyr";
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; }
+  footer .instagram {
+    display: flex;
+    grid-area: instagram;
+    padding-top: 4%; }
+    footer .instagram p {
+      padding-left: 5px;
+      border-bottom: 2px solid white; }
+  footer .whatsapp {
+    display: flex;
+    grid-area: whatsapp;
+    padding-top: 4%; }
+    footer .whatsapp p {
+      padding-left: 5px;
+      border-bottom: 2px solid white; }
+  footer .mail {
+    display: flex;
+    grid-area: mail;
+    padding-top: 4%; }
+    footer .mail p {
+      padding-left: 5px;
+      border-bottom: 2px solid white; }
+  footer .facebook {
+    display: flex;
+    grid-area: facebook;
+    padding-top: 4%; }
+    footer .facebook p {
+      padding-left: 5px;
+      border-bottom: 2px solid white; }
+  footer .copyright {
+    grid-area: copyr;
+    padding-top: 4%; }
