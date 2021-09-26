@@ -94,11 +94,20 @@ body {
         display: none;
         background-color: red;
         outline: 3px solid black; }
+        @media only screen and (max-width: 768px) {
+          .cabecera nav ul ul {
+            display: none; } }
         .cabecera nav ul ul li {
           width: 100%;
           padding: 3%;
           background-color: red;
           position: relative; }
+          @media only screen and (max-width: 768px) {
+            .cabecera nav ul ul li {
+              display: none; } }
+          @media only screen and (max-width: 320px) {
+            .cabecera nav ul ul li {
+              display: none; } }
           .cabecera nav ul ul li .href {
             display: block;
             margin: 2% auto;
@@ -110,6 +119,12 @@ body {
             outline: none;
             border-bottom: 2px solid black;
             color: white !important; }
+            @media only screen and (max-width: 320px) {
+              .cabecera nav ul ul li .href {
+                display: none; } }
+            @media only screen and (max-width: 768px) {
+              .cabecera nav ul ul li .href {
+                display: none; } }
 
 /*index*/
 main {
@@ -120,6 +135,9 @@ main {
   box-sizing: border-box;
   max-width: 1200px;
   height: 80%; }
+  @media only screen and (max-width: 768px) {
+    main {
+      flex-direction: column; } }
 
 #productos-destacados {
   display: grid;
@@ -127,6 +145,14 @@ main {
   grid-template-rows: 0,5fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   justify-items: center; }
+  @media only screen and (max-width: 768px) {
+    #productos-destacados {
+      display: flex;
+      flex-direction: column; } }
+  @media only screen and (max-width: 320px) {
+    #productos-destacados {
+      display: flex;
+      flex-direction: column; } }
   #productos-destacados .titulo {
     grid-area: titulo;
     display: flex;
@@ -174,6 +200,10 @@ main {
     height: 40%;
     text-align: center;
     box-sizing: border-box; }
+    @media only screen and (max-width: 768px) {
+      #nosotros div {
+        height: auto;
+        width: auto; } }
 
 /*nuestros-productos*/
 #table {

@@ -76,6 +76,7 @@ body{
           }
           li:hover ul{
             display: block;
+
            }
            ul{
                 position: absolute;
@@ -83,12 +84,23 @@ body{
                 display: none;
                 background-color:red;
                 outline: 3px solid black;
+                @media only screen and (max-width:768px) {
+                    display: none;
+                    
+                }
 
                 li{
                  width: 100%;
                  padding: 3%;
                  background-color: red;
                  position: relative;
+                 @media only screen and (max-width: 768px){
+                     display: none;
+                 }
+                 @media only screen and (max-width: 320px){
+                     display: none;
+                     
+                 }
                     .href{
                         display: block;
                         margin: 2% auto;
@@ -100,6 +112,12 @@ body{
                         outline: none;
                         border-bottom: 2px solid black ;
                         color: white !important;
+                        @media only screen and (max-width: 320px){
+                            display: none;
+                        }
+                        @media only screen and (max-width:768px){
+                            display: none;
+                        }
                     }
                 }
 
@@ -119,6 +137,11 @@ main{
     box-sizing: border-box;
     max-width: 1200px;
     height: 80%; 
+
+    @media only screen and (max-width:768px){
+        flex-direction: column;
+    }
+
 }
 
 #productos-destacados{
@@ -132,6 +155,15 @@ main{
     grid-template-rows:  0,5fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     justify-items: center ;
+
+    @media only screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+    }
+    @media only screen and (max-width:320px) {
+        display: flex;
+        flex-direction: column;
+    }
 
     .titulo{
         grid-area: titulo;
@@ -200,6 +232,10 @@ main{
         height: 40%;
         text-align: center;
         box-sizing: border-box;
+        @media only screen and (max-width: 768px){
+            height: auto;
+            width: auto;
+        }
     }
 
 }
