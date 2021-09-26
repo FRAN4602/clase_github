@@ -297,7 +297,7 @@ footer {
     justify-items: center; }
     @media only screen and (max-width: 320px) {
       footer section {
-        width: 100%; } }
+        margin: 0 2%; } }
   footer .instagram {
     display: flex;
     grid-area: instagram;
