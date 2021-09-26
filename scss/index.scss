@@ -90,6 +90,12 @@ body{
                     flex-wrap: wrap;
                     outline: none;
                 }
+                @media only screen and (max-width:1024px) {
+                    display: none;
+                    margin: auto;
+                    flex-wrap: wrap;
+                    outline: none;
+                }
 
                 li{
                  width: 100%;
@@ -102,6 +108,9 @@ body{
                  @media only screen and (max-width: 320px){
                      display: none !important;
                      
+                 }
+                 @media only screen and (max-width: 1024px) {
+                     display: none; 
                  }
                     .href{
                         display: block;
@@ -119,6 +128,10 @@ body{
                         }
                         @media only screen and (max-width:768px){
                             display: none;
+                        }
+                        @media only screen and (max-width: 1024px) {
+                            display: none;
+                            
                         }
                     }
                 }
